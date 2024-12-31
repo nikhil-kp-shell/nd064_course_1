@@ -1,0 +1,24 @@
+namespace: 
+  name: sandbox
+replicaCount: 1
+image:
+  repository: nikhilkumarpradhan/techtrends
+  tag: latest
+  pullPolicy: IfNotPresent
+resources:
+  requests:
+    cpu: 250m
+    memory: 64Mi
+  limits:
+    cpu: 500m
+    memory: 128Mi
+service:
+  type: ClusterIP
+  port: 4111
+  targetPort: 3111
+  protocol: TCP
+containerPort: 3111
+livenessProbe:
+  path: /healthz
+readinessProbe:
+  path: /healthz
