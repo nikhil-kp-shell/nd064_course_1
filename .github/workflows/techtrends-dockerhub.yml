@@ -28,6 +28,6 @@ jobs:
         with:
           context: ./project
           file: ./project/Dockerfile
-          platforms: linux/amd64
+          platforms: linux/arm64
           push: true
           tags: nikhilkumarpradhan/techtrends:latest
