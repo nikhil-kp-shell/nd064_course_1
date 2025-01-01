@@ -1,5 +1,5 @@
 namespace: 
-  name: prod
+  name: production
 replicaCount: 5
 service: 
   port: 7111
