@@ -1,5 +1,5 @@
 namespace: 
-  name: UAT
+  name: uat
 replicaCount: 3
 service: 
   port: 5111
